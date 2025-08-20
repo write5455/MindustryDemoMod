@@ -1,4 +1,4 @@
-package content;
+package MyContent;
 
 import arc.*;
 import arc.util.*;
@@ -26,8 +26,9 @@ public class title extends Mod{
     }
 
     @Override
-    public void loadContent(){
-        Log.info("Loading Mod Successful");
+    public void loadContent() {
+        ModItems.load();
+        ModPower.load();
+        Log.info("Loading content");
     }
-
 }

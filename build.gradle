@@ -2,6 +2,14 @@ apply plugin: "java"
 
 version '1.0'
 
+allprojects {
+    tasks.withType(JavaCompile).tap {
+        configureEach {
+            options.encoding = "UTF-8"
+        }
+    }
+}
+
 sourceSets.main.java.srcDirs = ["src"]
 
 repositories{
