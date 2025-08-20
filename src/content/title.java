@@ -9,7 +9,7 @@ import mindustry.ui.dialogs.*;
 public class title extends Mod{
 
     public title(){
-        Log.info("Loaded title constructor.");
+        Log.info("Starting Mod");
 
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
@@ -27,7 +27,7 @@ public class title extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("测试");
+        Log.info("Loading Mod Successful");
     }
 
 }
