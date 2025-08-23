@@ -17,6 +17,7 @@ public class ModItems extends Mod{
                 color = Color.valueOf("84f542"); // 设置颜色
                 hardness = 1;
                 cost = 1.5f;
+                flammability = 0.1f;
                 alwaysUnlocked = false; // 需要研究解锁
             }
         };
